@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.com">
+	<head>
+		<title>Error</title>
+		<object th:include="fragments/fragment :: css" th:remove="tag"></object>
+		<object th:include="fragments/fragment :: js" th:remove="tag"></object>
+	</head>
+	<body>
+		<nav th:replace="fragments/fragment :: navbar(title='Error')"></nav>
+		<h3>Error, License Number pilot tidak ada/tidak diberikan</h3>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: tutorial5
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: stanleysebastian
+Implementation-Vendor-Id: com.apap
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/tutorial5
+Created-By: Maven Integration for Eclipse
+
