@@ -1,0 +1,29 @@
+1. CONDITIONAL EXPRESSION
+- menambahkan if dan unless pada tag, atau bisa langsung dengan menuliskan condition pada 1 line, dan jawaban true pada sebelah kanan dan false pada sebelah kiri.
+
+2. STATIC FILE
+- menambahkan file css dan js pada folder static
+- berguna untuk membuat halaman web menjadi lebih menarik karena adanya template dari css dan js yang dapat kita ubah.
+
+3. FRAGMENT
+- digunakan untuk mereuse code pada 1 html yang dapat digunakan untuk html lainnya.
+- membuat folder fragments pada folder templates, dan fragment.html pada bagian dalamnya yang akan digunakan pada html lain.
+- diimplementasikan pada html lain dengan cara menulis th:include dan nama fragment sesuai dengan yang tertulis pada fragment.html
+
+4. ERROR HANDLER
+- digunakan untuk menampilkan webpage dengan tampilan lebih ramah untuk user ketika dihadapi dengan error.
+- membuat folder error di dalam folder templates
+- membuat file html sesuai kode error, contoh : 404.html
+
+5. FORM HANDLER
+- berguna untuk menghandle form yang bisa langsung mengisi form lebih dari 1, contoh : checkbox
+- mengubah view-pilot.html dan flightController.java
+
+LATIHAN
+1. Mengubah "APAP" pada navbar sesuai dengan nama dari halaman yang sedang diakses.
+- Menambahkan th:text=${title} pada fragment.html dan kemudian mengaplikasikan untuk menambahkan model.attribute pada beberapa html dan disesuaikan dengan nama dari halaman tersebut yang berakibat pada ketika mengakses halaman tertentu akan sesuai nama halaman tersebut.
+
+2. Untuk bisa membuat insert flight pada banyak form didalam 1 halaman, maka fungsi add dan fungsi addFlightSubmit diatur sedemikian rupa terlebih dahulu. 
+   Fungsi add nantinya akan membuat suatu temporary PilotModel yang dia akan digunakan untuk pengambilan list flight yang akan dimasukkan pada PilotModel yang sebenarnya. 
+   Kemudian akan diisi list dari temporary PilotModel dengan data FlightModel baru yang akan diisi di halaman add flight. 
+   Add flight akan menggunakan fungsi baru yakni addRow yang mana dia akan membuat flight baru yang dimasukkan ke dalam listnya, dan karena menggunakan fungsi for each pada templates addFlight, hal ini berimplikasi saat dilakukan add flight, akan membuka form baru yang belum diisi. 
